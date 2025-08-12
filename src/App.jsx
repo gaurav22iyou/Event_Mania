@@ -5,7 +5,8 @@ import EventDetails from './pages/eventdetails/EventDetails';
 import About from './pages/about/About';
 import Layout from './components/layout/Layout';
 import Contact from './pages/contact/Contact';
-import EventList from './pages/eventList/EventList';
+import EventList from './pages/eventlist/EventList';
+
 
 
 
