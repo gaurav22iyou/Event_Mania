@@ -7,6 +7,7 @@ import Layout from './components/layout/Layout';
 import Contact from './pages/contact/Contact';
 import EventList from './pages/eventList/EventList';
 
+
 function App() {
   const router = createBrowserRouter([
     {
