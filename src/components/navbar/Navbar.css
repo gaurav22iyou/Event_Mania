@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 45px;
+    height: 8rem;
+    background: linear-gradient(360deg, #2c0f15, #000000ef);
+    color: white;
+    position: relative;
+    text-align: center;
+    line-height: normal;
+
+}
+
+.navbar .right h1 {
+    margin: 0;
+    font-size: 3.2rem;
+  font-weight: 600;
+    font-family: "Playwrite PL", cursive;
+    font-optical-sizing: auto;
+    color: white;
+
+
+}
+
+.left {
+    display: flex;
+    gap: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.left h4 {
+    margin: 0;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    transition: color 0.3s;
+    font-weight: 400;
+
+}
+
+.left h4:hover {
+    color: #ff9900e1;
+}
+
+.hamburger {
+  
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+    .left {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        background: #333;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+
+    .left.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

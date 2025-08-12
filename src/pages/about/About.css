@@ -1,0 +1,79 @@
+.mainAbout {
+    background: linear-gradient(180deg, #2c0f15, #000000);
+    width: 100vw;
+    height: 120vh;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0.5rem auto;
+    padding-top: 70px;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    font-family: "Playwrite PL", cursive;
+    font-optical-sizing: auto;
+    color: white;
+}
+
+.about-container h1 {
+    font-size: 2rem;
+    color: honeydew;
+
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 1rem;
+    color: honeydew;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+.mainAbout button {
+    display: block;
+    margin-left: 70%;
+    margin-top: 15px;
+    padding: 10px 10px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mainAbout button:hover {
+    background-color: white;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .about-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-container p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .eventDetails {
+        max-width: 95%;
+    }
+
+    .eventdetailCont button {
+        width: 40%;
+        margin-left: 80%;
+        text-align: center;
+    }
+}

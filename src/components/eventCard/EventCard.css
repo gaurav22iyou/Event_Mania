@@ -1,0 +1,72 @@
+.ticketCard {
+  background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);
+  color: white;
+  border-radius: 16px;
+  padding: 16px;
+  width: 320px;
+  position: relative;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  clip-path: polygon(
+    0% 0%, 100% 0%, 100% calc(50% - 10px),
+    98% calc(50% - 10px), 98% calc(50% + 10px),
+    100% calc(50% + 10px), 100% 100%, 0% 100%,
+    0% calc(50% + 10px), 2% calc(50% + 10px),
+    2% calc(50% - 10px), 0% calc(50% - 10px)
+  );
+}
+
+.ticketHeader {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.ticketRoute {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.ticketStatus {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #a3ffb3;
+}
+
+.ticketActions {
+  display: flex;
+  gap: 10px;
+}
+
+.primaryBtn {
+  flex: 1;
+  background: white;
+  color: #4a00e0;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.secondaryBtn {
+  flex: 1;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primaryBtn:hover {
+  background: #f0f0f0;
+}
+
+.secondaryBtn:hover {
+  background: rgba(255,255,255,0.1);
+}

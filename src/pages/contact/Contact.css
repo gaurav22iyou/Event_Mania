@@ -1,0 +1,116 @@
+.contact-container {
+  width: 100vw;
+  height: 110vh;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: linear-gradient(180deg, #2c0f15, #000000ee);
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: aliceblue;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f9f9f915;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 50%;
+  margin: 30px auto;
+  color: honeydew;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f90a;
+  color: honeydew;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #ccea0ad1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #d35400;
+}
+
+.contact-info {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1rem;
+  color: aliceblue;
+}
+
+.contact-info h2 {
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+
+@media (max-width: 768px) {
+  .contact-form form {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-info {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form form {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-form button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .contact-info {
+    font-size: 0.9rem;
+  }
+}

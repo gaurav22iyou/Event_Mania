@@ -1,0 +1,39 @@
+.eventList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 40px;
+  background: linear-gradient(180deg, #2c0f15, #000000); 
+  /* border-radius: 16px; */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  padding-top: 95px;
+
+}
+
+.eventList > * {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eventList > *:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .eventList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .eventList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .eventList {
+    grid-template-columns: 1fr;
+  }
+}
