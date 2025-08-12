@@ -1,10 +1,11 @@
 // In App.js
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import EventDetails from './pages/eventdetails/EventDetails';
-import EventList from './pages/eventList/EventList';
+
 import About from './pages/about/About';
 import Layout from './components/layout/Layout';
 import Contact from './pages/contact/Contact';
+import EventList from './pages/eventList/EventList';
 
 function App() {
   const router = createBrowserRouter([
