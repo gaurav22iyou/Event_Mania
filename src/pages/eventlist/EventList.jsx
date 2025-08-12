@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import EventCard from "../../components/eventCard/EventCard";
 import Notification from "../../components/notification/Notification";
-import './EventList.css'
+import './EvenList.css'
+
 export default function EventList() {
     const [events, setEvents] = useState([]);
     const [message, setMessage] = useState("");
